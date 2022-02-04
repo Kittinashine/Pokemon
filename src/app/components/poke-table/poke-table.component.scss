@@ -1,0 +1,78 @@
+@import "../../../assets/styles/variables.scss";
+
+//clase del div que contiene la tabla
+.container{
+width: 100%;
+margin-top: 20px;
+text-align: center;
+}
+
+///tamaño y estilos de la tabla
+table{
+ min-width: 80%; 
+ margin: auto;
+ text-align: center; 
+  
+ 
+}
+
+// se agrega color, tamaño y estilos a la letra de la cabecera de la tabla
+.mat-header-cell{
+    color: blue;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+
+}
+/// se agrega los colores segun los pokemones pares
+.mat-row:nth-child(even){
+    background-color: $morado;
+    
+
+    
+}
+// se  agrega los colores segun los pokemones impares
+.mat-row:nth-child(odd){
+    background-color: $verdeJade;
+}
+
+//primera letra de la tabla
+.mat-cell:first-letter{
+    text-transform: uppercase;
+    
+    
+   
+    
+}
+    
+//hover para el cursor
+.mat-row:hover{
+    cursor: pointer;
+ 
+
+
+}
+///alineación del buscador para filtrar
+.mat-form-field{
+float:right; 
+margin-right: 200px;
+margin-bottom: 50px; 
+margin-top: -90px;
+
+} 
+//paginación  
+   
+ .mat-paginator{
+ background-color: burlywood;
+font-weight: bolder;
+       
+ }
+
+///estilos para la letra de la tabla color, tamaño y tipo
+ .mat-cell{
+     color: black;
+     font-size: 15px;
+     font-family:Arial, Helvetica, sans-serif;
+     font-weight: bolder;
+
+ }
